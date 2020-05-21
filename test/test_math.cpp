@@ -1,5 +1,5 @@
 #include <stdint.h>
-#include "../WMath.h"
+#include "../Wiring/WMath.h"
 #include "stdio.h"
 
 
@@ -15,7 +15,7 @@ int main(void) {
 
 /*
  * test method(windows cmd):
- * cd wring/test
- * g++ test_math.cpp ../WMath.cpp -o test_math
+ * cd test
+ * g++ test_math.cpp ../Wiring/WMath.cpp -o test_math
  * .\test_math.exe
  */

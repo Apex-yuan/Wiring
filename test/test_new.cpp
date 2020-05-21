@@ -18,7 +18,7 @@ int main(void) {
 
 /*
  * test method(windows cmd):
- * cd wring/test
- * g++ test_new.cpp ../new.cpp -o test_new
+ * cd test
+ * g++ test_new.cpp ../Wiring/new.cpp -o test_new
  * .\test_new.exe
  */

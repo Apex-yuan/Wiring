@@ -1,4 +1,4 @@
-#include "../Stream.h"
+#include "../Wiring/Stream.h"
 
 class Serial : public Stream {
     public:
@@ -24,7 +24,7 @@ class Serial : public Stream {
 
 size_t Serial::write(uint8_t c) {
     //printf("%c", c);
-    putchar(c);
+    putchar(c);  //底层要实现的接口函数
     return 1;
 }
 
@@ -66,7 +66,7 @@ int main(void) {
 
 /* 
  * test method(windows cmd):
- * cd wring/test
- * g++ test_stream.cpp ../Stream.cpp ../Print.cpp ../WString.cpp ../avr/dtostrf.c ../itoa.c -o test_stream
+ * cd test
+ * g++ test_stream.cpp ../Wiring/Stream.cpp ../Wiring/Print.cpp ../Wiring/WString.cpp ../Wiring/avr/dtostrf.c ../Wiring/itoa.c -o test_stream
  * .\test_stream.exe
  */
